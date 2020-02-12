@@ -1,16 +1,20 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <math.h>
 
+void num1() {
+  int a;
+  a = 11;
+  printf("value of a is %d\n", a);
+}
+
+void num2() {
+  int b;
+  //b is 11!
+  printf("value of b is %d\n", b);
+}
 int main() {
-  struct mine {
-    int num;
-    int num2;
-  };
-  struct mine m;
-  m.num = 1;
-  m.num2 = 2;
-  printf("%p\n", &m);
-  printf("%p\n", &m.num);
-  printf("%p\n", &m.num2);
+  num1();
+  num2();
 }
 
